@@ -1,7 +1,5 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Todo List
-This is a book shelve website dedicated to store collection of books, add new books and delete books. 
+# Leaderboard
+This is n this project l set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules.. 
 
 In this project, you will be using javascript arrays and object to store the list of books and saving the book colection in the local storage. Do not use any other framework, just pure javascript. After you are done with the project, run tests and deploy.
 
@@ -15,7 +13,6 @@ In this project, you will be using javascript arrays and object to store the lis
 
 - HTML5, Javascript
 - CSS3
-- Linters
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
@@ -28,8 +25,8 @@ To get a local copy up and running follow these simple example steps.
 - Create a github repository.
 
 ## Setup
-- `git clone https://github.com/bushmusi/todo-list.git`
-- `cd todo-list/`
+- `git clone https://github.com/bushmusi/leaderboard`
+- `cd leaderboard/`
 - Install packages:  `npm install`
 - Start Live Server: `npm start`
 
