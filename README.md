@@ -1,7 +1,6 @@
 # Leaderboard
-This is this project I have set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules.. 
 
-In this project, I have add features like to add score and fetch all scores using API.
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ### [Live Demo Link](https://bushmusi.github.io/leaderboard/)
 
