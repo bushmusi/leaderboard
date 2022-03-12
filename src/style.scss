@@ -7,6 +7,7 @@ $font-congose: "cocogoose", sans-serif;
 $padding-square: 30px 30px;
 $flex-col-gap: 40px;
 $table-padding: 20px 20px;
+$breakpoint-tablet: 768px;
 
 *,
 ::before,
@@ -40,6 +41,32 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  background-color: rgb(175, 172, 172);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(248, 246, 246);
+  border: none;
+  color: rgb(59, 55, 55);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 header {
   h1 {
     padding: $padding-square;
@@ -61,6 +88,11 @@ main {
     div {
       display: flex;
       column-gap: $flex-col-gap;
+
+      h2 {
+        font-family: $font-lato;
+        flex: 2;
+      }
     }
 
     table {
@@ -94,25 +126,47 @@ main {
   aside {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 50vw;
 
     form {
       display: flex;
       flex-direction: column;
-      margin-top: 30px;
-      row-gap: 20px;
-      width: 60%;
 
       input[type=text],
       input[type=number] {
-        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid rgba(75, 69, 69, 0.651);
         height: 40px;
         padding: $table-padding;
+        margin: 20px;
       }
 
       button[type=submit] {
-        width: 25%;
+        width: auto;
+        float: right;
       }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: $padding-square;
+    row-gap: $flex-col-gap;
+
+    section {
+      width: 100%;
+
+      h2 {
+        font-family: $font-congose;
+        font-size: large;
+      }
+    }
+
+    aside {
+      width: 100%;
     }
   }
 }
