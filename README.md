@@ -1,7 +1,7 @@
 # Leaderboard
-This is n this project l set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules.. 
+This is this project I have set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules.. 
 
-In this project, you will be using javascript arrays and object to store the list of books and saving the book colection in the local storage. Do not use any other framework, just pure javascript. After you are done with the project, run tests and deploy.
+In this project, I have add features like to add score and fetch all scores using API.
 
 ### [Live Demo Link](https://bushmusi.github.io/leaderboard/)
 
