@@ -6,6 +6,7 @@ $font-lato: "Karla", sans-serif;
 $font-congose: "cocogoose", sans-serif;
 $padding-square: 30px 30px;
 $flex-col-gap: 40px;
+$table-padding: 20px 20px;
 
 *,
 ::before,
@@ -70,6 +71,24 @@ main {
       tr:nth-child(even) {
         background-color: rgb(175, 172, 172);
       }
+
+      thead {
+        th {
+          border: 3px solid rgba(75, 69, 69, 0.651);
+          padding: 20px 20px;
+          font-family: $font-lato;
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            border: 3px solid rgba(75, 69, 69, 0.651);
+            padding: 10px 10px;
+          }
+        }
+      }
+
     }
   }
 
@@ -85,11 +104,13 @@ main {
       row-gap: 20px;
       width: 60%;
 
-      input[type=text] {
+      input[type=text], input[type=number] {
         box-sizing: border-box;
+        height: 40px;
+        padding: $table-padding;
       }
 
-      input[type=submit] {
+      button[type=submit] {
         width: 25%;
       }
     }
