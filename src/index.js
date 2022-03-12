@@ -5,26 +5,26 @@ import refresh from './modules/refresh-view.js';
 
 const request = new Api();
 
-const displayData =async () => {
-    const data =await request.getScores();
-    refresh(data);
-}
+const displayData = async () => {
+  const data = await request.getScores();
+  refresh(data);
+};
 
-displayData()
+displayData();
 
 document.getElementById('refresh').addEventListener('click', async () => {
-    displayData()
+  displayData();
 });
 
-document.getElementById('score-form').addEventListener('submit',async (e) => {
-    e.preventDefault();
-    const form = document.getElementById('score-form');
-    const { elements } = form;
-    const data = {
-        user: elements.user.value,
-        score: elements.score.value
-    }
-    await request.addScore(data);
-    form.reset();
-    displayData();
-})
+document.getElementById('score-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = document.getElementById('score-form');
+  const { elements } = form;
+  const data = {
+    user: elements.user.value,
+    score: elements.score.value,
+  };
+  await request.addScore(data);
+  form.reset();
+  displayData();
+});

@@ -68,11 +68,7 @@ main {
       border: 3px solid #302b2b9e;
       border-collapse: collapse;
 
-      tr:nth-child(even) {
-        background-color: rgb(175, 172, 172);
-      }
-
-      thead {
+      tr {
         th {
           border: 3px solid rgba(75, 69, 69, 0.651);
           padding: 20px 20px;
@@ -89,6 +85,9 @@ main {
         }
       }
 
+      tr:nth-child(even) {
+        background-color: rgb(175, 172, 172);
+      }
     }
   }
 
@@ -104,7 +103,8 @@ main {
       row-gap: 20px;
       width: 60%;
 
-      input[type=text], input[type=number] {
+      input[type=text],
+      input[type=number] {
         box-sizing: border-box;
         height: 40px;
         padding: $table-padding;
