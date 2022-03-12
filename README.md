@@ -3,7 +3,7 @@ This is n this project l set up a JavaScript project for the Leaderboard list ap
 
 In this project, you will be using javascript arrays and object to store the list of books and saving the book colection in the local storage. Do not use any other framework, just pure javascript. After you are done with the project, run tests and deploy.
 
-### [Live Demo Link](https://bushmusi.github.io/todo-list/)
+### [Live Demo Link](https://bushmusi.github.io/leaderboard/)
 
 
 
